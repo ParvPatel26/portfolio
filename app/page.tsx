@@ -106,7 +106,7 @@ export default function Home() {
               target="_blank"
               className="rounded-lg border border-zinc-300 px-5 py-3 text-sm font-semibold text-zinc-900 transition hover:border-accent hover:text-accent dark:border-zinc-700 dark:text-zinc-100"
             >
-              Download résumé
+              Download Resume
             </a>
             <a
               href={profile.github}
