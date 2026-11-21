@@ -1,6 +1,7 @@
 import ThemeToggle from "@/components/ThemeToggle";
 import Reveal from "@/components/Reveal";
 import ScrollProgress from "@/components/ScrollProgress";
+import CopyEmail from "@/components/CopyEmail";
 import { profile, experience, projects, skills, education, type Link } from "@/lib/data";
 
 const nav = [
@@ -224,12 +225,15 @@ export default function Home() {
             <p className="mx-auto mt-4 max-w-md leading-relaxed">
               I&apos;m open to graduate and junior software engineering roles in Australia. My inbox is always open.
             </p>
-            <a
-              href={`mailto:${profile.email}`}
-              className="mt-8 inline-block rounded-lg bg-accent px-6 py-3 font-semibold text-zinc-950 transition hover:bg-accent-soft"
-            >
-              Say hello
-            </a>
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
+              <a
+                href={`mailto:${profile.email}`}
+                className="rounded-lg bg-accent px-6 py-3 font-semibold text-zinc-950 transition hover:bg-accent-soft"
+              >
+                Say hello
+              </a>
+              <CopyEmail email={profile.email} />
+            </div>
             <p className="mt-4 font-mono text-sm text-zinc-500">{profile.email}</p>
           </div>
           </Reveal>
