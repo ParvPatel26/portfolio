@@ -3,17 +3,18 @@
 export const profile = {
   name: "Parv Patel",
   role: "Full-Stack Software Engineer · AI Practitioner",
-  location: "Melbourne, Australia",
+    location: "Melbourne, Australia · Open to relocation",
   email: "parvpatel2612@gmail.com",
   linkedin: "https://www.linkedin.com/in/parvpatel26/",
   github: "https://github.com/ParvPatel26",
   resume: "/Parv_Patel_Resume.pdf",
   tagline:
     "I build and ship end-to-end applications — from database schema and REST APIs to multi-agent LLM systems and containerised cloud deployments.",
-  about: [
-    "I'm completing a Master of Information Technology at RMIT, working across Python, Django, FastAPI, Next.js, Node.js and Java.",
-    "Most recently I architected an agentic AI loan-origination platform with LangGraph and Google Gemini, deployed live on Microsoft Azure. I enjoy owning the full stack and bring a testing-first mindset backed by JUnit, Selenium, Cucumber and JMeter.",
-    "I'm looking for graduate software engineer roles in Australia.",
+    about: [
+    "I recently completed my Master of Information Technology at RMIT University (2026)",
+    "Most recently, I built, an agentic AI loan-origination platform for Mutualhub. I designed a multi-agent LangGraph pipeline that interviews applicants, verifies their documents with Google Gemini OCR and makes credit decisions against lending policy, all deployed live on Microsoft Azure with Next.js, FastAPI and Docker.",
+    "Before that, I built a music subscription web app with a Node.js/Express REST API deployed across three AWS compute models: EC2, ECS Fargate and Lambda.",
+    "My strengths are AI agents, cloud computing, AWS Lambda and DynamoDB data modelling, with a focus on scalable, efficient backend systems. I'm looking for graduate software engineer roles in Australia.",
   ],
 };
 
@@ -25,7 +26,7 @@ export const experience = [
     title: "Full-Stack Developer · Industry Capstone",
     period: "Aug 2026 – Oct 2026",
     location: "Melbourne, VIC",
-    summary: "Agentic AI loan-origination platform",
+    summary: "Agentic AI loan-origination and Credit Assessment platform",
     points: [
       "Architected a multi-service platform: Next.js customer/staff/admin portal, FastAPI platform API and a LangGraph conversational agent service, containerised with Docker Compose on PostgreSQL with per-service schema isolation.",
       "Built a multi-agent LangGraph pipeline for product discovery, structured interview slot-filling and a Five C's credit-assessment engine that automates approve/escalate decisions.",
@@ -59,7 +60,7 @@ export const experience = [
 
 export const projects = [
   {
-    name: "MutualHub — Agentic Loan Origination",
+    name: "MutualHub — Agentic AI Loan Origination & Credit Assessment",
     blurb:
       "Multi-agent LangGraph system that interviews applicants, verifies documents with Gemini OCR and makes credit decisions against lending policy.",
     tech: ["Next.js", "FastAPI", "LangGraph", "Gemini", "Azure"],
